@@ -18,7 +18,7 @@ export const Dashboard = () => {
               return (
                 <div key={item} className="dropdown min-w-[200px] w-full">
                   <p className="mb-1.5">Filter {item}</p>
-                  <div className="w-full h-10 rounded-md border border-border px-4 flex items-center justify-between bg-secondary text-secondary-foreground">
+                  <div className="w-full h-10 rounded-md border border-neutral-600 px-4 flex items-center justify-between bg-background">
                     <span>All</span>
                     <ChevronDown size={18} className="text-muted-foreground" />
                   </div>
