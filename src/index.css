@@ -1,68 +1,59 @@
+@import "tailwindcss";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --background: #0a0909; /* hsl(20 14.3% 4.1%) */
+  --foreground: #f2f2f2; /* hsl(0 0% 95%) */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --card: #1a1817; /* hsl(24 9.8% 10%) */
+  --card-foreground: #f2f2f2; /* hsl(0 0% 95%) */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  --popover: #171717; /* hsl(0 0% 9%) */
+  --popover-foreground: #f2f2f2; /* hsl(0 0% 95%) */
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  --primary: #00c36f; /* hsl(142.1 70.6% 45.3%) */
+  --primary-foreground: #052610; /* hsl(144.9 80.4% 10%) */
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  --secondary: #292929; /* hsl(240 3.7% 15.9%) */
+  --secondary-foreground: #fafafa; /* hsl(0 0% 98%) */
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  --muted: #262626; /* hsl(0 0% 15%) */
+  --muted-foreground: #a3a3a3; /* hsl(240 5% 64.9%) */
+
+  --accent: #272322; /* hsl(12 6.5% 15.1%) */
+  --accent-foreground: #fafafa; /* hsl(0 0% 98%) */
+
+  --destructive: #9e1d1d; /* hsl(0 62.8% 30.6%) */
+  --destructive-foreground: #fbeaea; /* hsl(0 85.7% 97.3%) */
+
+  --border: #292929; /* hsl(240 3.7% 15.9%) */
+  --input: #292929; /* hsl(240 3.7% 15.9%) */
+  --ring: #0f7c46; /* hsl(142.4 71.8% 29.2%) */
+
+  /* ✅ Sidebar tokens */
+  --sidebar: rgba(38, 38, 38, 0.4); /* bg-muted/40 */
+  --sidebar-foreground: #a3a3a3; /* muted-foreground */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-goreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
 }
